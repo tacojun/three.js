@@ -317,9 +317,10 @@ class Object3D extends EventDispatcher {
 		/**
 		 * This value allows the default rendering order of scene graph objects to be
 		 * overridden although opaque and transparent objects remain sorted independently.
-		 * When this property is set for an instance of {@link Group},all descendants
-		 * objects will be sorted and rendered together. Sorting is from lowest to highest
-		 * render order.
+		 * When this property is set for an instance of {@link Group}, all descendants
+		 * will be sorted and rendered together. The group's render order is considered
+		 * before each descendant's individual render order. Sorting is from lowest to
+		 * highest render order.
 		 *
 		 * @type {number}
 		 * @default 0
